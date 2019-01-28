@@ -114,7 +114,7 @@ Buatlah sebuah project back-end NodeJS (__Express.js__) sederhana yang mampu mel
     ```json
     {
         "login": "failed",
-        "status": "Login gagal"
+        "status": "Akun tidak terdaftar"
     }
     ```
 
