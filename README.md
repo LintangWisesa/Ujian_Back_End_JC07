@@ -85,3 +85,61 @@ Buatlah sebuah project back-end NodeJS (__Express.js__) sederhana yang mampu men
 _**Catatan:**_ _Upload source code project ke repo __Github__ Anda, kemudian lampirkan __url link repo Github__ Anda via email: lintang@purwadhika.com!_
 
 #
+
+### **Soal 3 - Express & MySQL**
+
+Buatlah sebuah project back-end NodeJS (__Express.js__) sederhana yang mampu melakukan proses autentikasi (__signup__ & __login__) dengan mengakses tabel __"users"__ di database __"sekolahku"__ (*dari soal nomor 1*), dengan spesifikasi route sebagai berikut:
+
+- __*POST /signup*__ &rarr; akan melakukan proses __signup__: memasukkan data user baru ke tabel **"users"** di database **"sekolahku"**. Response yang diberikan setelah request memasukkan data sukses dilakukan adalah sebagai berikut:
+
+    ```json
+    {
+        "username": "Lintang",
+        "email": "lintang@purwadhika.com",
+        "status": "Signup sukses"
+    }
+    ```
+
+- __*POST /login*__ &rarr; akan melakukan proses __login__. Client dapat melakukan proses login cukup dengan mengirimkan __"username" *ATAU* "email"__ saja, beserta __"password"__-nya. Response yang diberikan setelah request login sukses dilakukan adalah sebagai berikut:
+
+    ```json
+    {
+        "login": "ok",
+        "status": "Login sukses"
+    }
+    ```
+    
+    Jika __"username"__ dan/atau __"email"__ untuk login tidak terdaftar di tabel __"users"__, maka proses login gagal & response yang ditampilkan sebagai berikut:
+
+    ```json
+    {
+        "login": "failed",
+        "status": "Login gagal"
+    }
+    ```
+
+    Jika __"username"__ dan/atau __"email"__ untuk login sudah terdaftar di tabel __"users"__, namun __"password"__ yang dimasukkan salah, maka proses login gagal & response yang ditampilkan sebagai berikut:
+
+    ```json
+    {
+        "login": "failed",
+        "status": "Password salah"
+    }
+    ```
+
+- Gunakan __Express Router__ untuk memisahkan code route autentikasi ke MySQL dengan code utama project.
+
+_**Catatan:**_ _Upload source code project ke repo __Github__ Anda, kemudian lampirkan __url link repo Github__ Anda via email: lintang@purwadhika.com!_
+
+#
+
+### *__#HappyCoding__ :relaxed:*
+
+#### Lintang Wisesa :love_letter: _lintangwisesa@ymail.com_
+
+[Facebook](https://www.facebook.com/lintangbagus) | 
+[Twitter](https://twitter.com/Lintang_Wisesa) |
+[Google+](https://plus.google.com/u/0/+LintangWisesa1) |
+[Youtube](https://www.youtube.com/user/lintangbagus) | 
+:octocat: [GitHub](https://github.com/LintangWisesa) |
+[Hackster](https://www.hackster.io/lintangwisesa)
