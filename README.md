@@ -57,3 +57,31 @@ Tuliskan langkah-langkah/urutan query MySQL untuk membuat sebuah database **"sek
 _**Catatan:**_ _Soal ini hanya meminta Anda untuk menuliskan langkah-langkah/urutan query MySQL sesuai spesifikasi di atas. Ketik jawaban dalam sebuah file __.txt__ & lampirkan via email lintang@purwadhika.com!_
 
 #
+
+### **Soal 2 - Express & MongoDB**
+
+Buatlah sebuah project back-end NodeJS (__Express.js__) sederhana yang mampu mengakses database MongoDB (gunakan __Mongoose__!), dengan spesifikasi route sebagai berikut:
+
+- __*POST /data*__ &rarr; tanpa mengirimkan data via _**body request**_, akan memasukkan data ke collection **"data"** di database **"dataCPU"**. Data yang tersimpan adalah data seputar sistem operasi yang digunakan user, mencakup: **nama CPU, tipe OS, platform OS, versi rilis OS, RAM tersisa** dan **RAM total**. Sekali lagi, data yang akan disimpan tidak perlu dideklarasikan di _**body request**_!
+
+    > __POST__ */data*
+
+- **_GET /data_** &rarr; akan memberikan response: menampilkan semua data dari collection **"data"** di database **"dataCPU"**. Data satuan yang ditampilkan diharapkan sebagai berikut:
+
+    ```bash
+    {   
+        _id: 5b453fb83de88413bc523928,
+        namacpu: 'Lintang_CPU',
+        tipe: 'Windows_NT',
+        platform: 'win32',
+        rilis: '10.0.17134',
+        ramSisa: 11338039296,
+        ramTotal: 17063497728
+    }
+    ```
+
+- Gunakan __Express Router__ untuk memisahkan code route ke MongoDB dengan code utama project.
+
+_**Catatan:**_ _Upload source code project ke repo __Github__ Anda, kemudian lampirkan __url link repo Github__ Anda via email: lintang@purwadhika.com!_
+
+#
