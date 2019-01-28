@@ -133,7 +133,7 @@ _**Catatan:**_ _Upload source code project ke repo __Github__ Anda, kemudian lam
 
 #
 
-### *__#HappyCoding__ :relaxed:*
+### *__#HappyCoding__* :relaxed:
 
 #### Lintang Wisesa :love_letter: _lintangwisesa@ymail.com_
 
